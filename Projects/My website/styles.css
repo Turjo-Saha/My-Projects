@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(/1_KnV1cBSw-kWyh7Y6XEEzrA.jpg);
+    background-size: contain;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85vw;
+    margin: auto;
+    padding: 35px 0;
+}
+
+nav ul li{
+    cursor: pointer;
+}
+
+nav h1 a {
+    text-decoration: none;
+    font-size: 40px;
+    color: rgb(237, 237, 237);
+}
+
+nav h1 a:hover {
+    color: white;
+}
+
+ul {
+    display: flex;
+    gap: 25px;
+}
+
+
+#h1 {
+    font-size: 30px;
+    margin-right: 30px;
+}
+
+main {
+    position: relative;
+    top: -170px;
+}
+
+.content p {
+    font-size: 12px;
+    margin-right: 30px;
+}
+
+
+nav ul li::before {
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+nav ul li:hover::before {
+    width: 100%;
+    transition: 0.5s;
+    background-position: left;
+}
+
+    ul li {
+        list-style: none;
+        text-transform: uppercase;
+        position: relative;
+    }
+
+    ul a {
+        text-decoration: none;
+        color: rgb(209, 209, 209);
+    }
+
+    
+
+    nav ul a:hover {
+        color: white;
+    }
+    
+    .content {
+        height: 70vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+
+    .content h1 {
+        font-size: 3.126em;
+        /* font-size: 50px; */
+        margin-bottom: 10px;
+    }
+
+
+    .button {
+        width: 100vw;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: -150px;
+        gap: 15px;
+    }
+
+    button {
+        height: 40px;
+        width: 150px;
+        border-radius: 25px;
+        background: transparent;
+        border: 1px solid #009688;
+        cursor: pointer;
+        font-size: 17px;
+        line-height: 15.5px;
+        position: relative;
+    }
+
+    button::before {
+        content: "";
+        background-color: #009688;
+        height: 100%;
+        width: 0%;
+        border-radius: 25px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        transition: 0.5s;
+    }
+
+    button a {
+        text-decoration: none;
+    }
+
+    button:hover::before {
+        width: 100%;
+        transition: 0.5s;
+    }

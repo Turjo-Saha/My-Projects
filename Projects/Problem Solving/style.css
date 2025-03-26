@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    text-align: center;
+    padding: 35px 0;
+    margin: auto;
+}
+
+h1{
+    font-size: 40px;
+}
+
+ul li {
+    text-align: right;
+    list-style: none;
+    position: relative;
+}
+
+ul{
+    display: flex;
+    gap: 50px;
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+ul li::after{
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s linear;
+}
+
+ul li:hover::after{
+    width: 100%;
+    transition: 0.5s linear;
+}
+
+.but{
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 10px;
+    background: transparent;
+}
+
+button{
+    height: 40px;
+    width: 150px;
+    border-radius: 25px;
+    background: transparent;
+    cursor: pointer;
+    border: 1px solid #009688;
+    position: relative;
+    z-index: 1 ;
+}
+
+button a{
+    text-decoration: none;
+    background: transparent;
+}
+
+button::after{
+    content: "";
+    background-color: #009688;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    border-radius: 25px;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: 0.5s linear;
+}
+
+
+.but button:hover::after{
+    transition: 0.5s linear;
+    border-radius: 25px;
+    width: 100%;
+}
+
+.but button:hover span{
+    color: white;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container{
+    width: 400px;
+    height: 300px;
+    border: 2px solid;
+    position: relative;
+    bottom: -750px;
+    text-align: center;
+}
+
+.content{
+    border: 2px solid;
+    width: 200px;
+    margin: auto;
+}

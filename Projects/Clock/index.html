@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            text-align: center;
+        }
+
+        #hr,#min, #ss{
+            display: inline;
+            font-size: 50px;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+        }
+        .clock{
+            border: 2px solid;
+            border-radius: 50%;
+            position: relative;
+            width: 0;
+            padding: 200px;
+        }
+        .clock p { 
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="clock">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+            <p>6</p>
+            <p>7</p>
+            <p>8</p>
+            <p>9</p>
+            <p>10</p>
+            <p>11</p>
+            <p>12</p>
+        </div>
+        <p id="hr">00 : </p>
+        <p id="min">00 : </p>
+        <p id="ss">00</p>
+        </div>
+    <script>
+        function digiclock(hours,minutes,seconds) {
+            let date = new Date();
+            hours = date.getHours();
+            minutes = date.getMinutes();
+            seconds = date.getSeconds();
+
+            if (hours < 10) {
+                hours = "0" + hours;
+            }
+            if (minutes < 10) {
+                minutes = "0" + minutes;
+            }
+            if (seconds < 10) {
+                seconds = "0" + seconds;
+            }
+
+            document.getElementById('hr').innerHTML = hours + " : ";
+            document.getElementById('min').innerHTML = minutes + " : ";
+            document.getElementById('ss').innerHTML = seconds;
+        }
+
+        setInterval(digiclock, 1000);
+    </script>
+</body>
+
+</html>

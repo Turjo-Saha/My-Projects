@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    box-shadow: 6px 7px 12px -2px black;
+}
+
+.input {
+    text-align: center;
+}
+
+input{
+    padding:24px;
+    font-size: 2rem ;
+    font-weight: 600;
+    text-align: end;
+}
+
+button{
+    padding: 14px ;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.button{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#eval{
+    background-color: orange;
+}
+
+#clear{
+    background-color: lightgreen;
+}
+
+.btn{
+    background-color: #101010;
+    color: white;
+}
+
+button:active{
+    scale: 90%;
+    transition: all 0.02s ease-out;
+}

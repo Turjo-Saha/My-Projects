@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+.navbar{
+    height: 60px;
+    background-color: #0f0f11;
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 35px;
+    margin-left: 15px;
+    padding: px;
+}
+
+.first{
+    color: #ccc;
+    margin-left: 15px;
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+.second{
+    display: flex;
+    color: #fff;
+}
+
+.second i{
+    position: relative;
+    top: -3px;
+    left: -3px;
+}
+
+.loc{
+    margin-left: 20px;
+}
+
+.int{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 15px;
+}
+
+.ganja select{
+    height: 40px;
+    border: none;
+    background-color: rgb(216, 216, 216);
+    border-radius: 3px 0 0 3px;
+    width: 50px;
+    color: rgb(83, 83, 83);
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.textbox input{
+    height: 40px;
+    border: none;
+    border-left: 1px solid rgb(148, 148, 148);
+    width: 600px;
+    padding: 16px;
+}
+
+.search-icon { 
+    height: 40px;
+    background-color: rgb(253, 172, 101);
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5pc;
+    border: none;
+    border-radius: 0 3px 3px 0;
+}
+
+
+.country{
+    display: flex;
+    gap: 2px;
+    justify-content: space-evenly;
+    margin-left: 15px;
+}
+
+.country p{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+.country #icon{
+    position: relative;
+    top: 10px;
+}
+
+.box2{
+    display: flex;
+}
+
+.box2 img{
+    position: relative;
+    top: 10px;
+}
+
+.cart{
+    display: flex;
+}
+
+.cart p{
+    position: relative;
+    top: 10px;
+}
+
+/* .navbar-parent{
+    display: flex;
+    height: 60px;
+    background-color: #0f0f11;
+    display: flex;
+    align-items: center;
+    justify-content: space-;
+} */
+
+.account{
+    margin-left: 15px;
+}
+
+.product{
+    margin-left: 15px;
+}
+
+.cart{
+    margin-left: 15px;
+}
+
+.border:hover{
+    border: 1.5px solid white;
+    transition: all 0.2;
+}
+

@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: #f0f2f5;
+    width: 80vh;
+}
+
+.form{
+    transform: translatex(770px) translateY(-30px);
+    border: none;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .1) , 0px 8px 16px rgba(0, 0, 0, .1);
+    padding-left: 10px;
+    width: 396px;
+    padding: 16px;
+
+}
+
+img{
+    height: 106px;
+    position: relative;
+    left: -25px;
+    margin-bottom: -12px;
+}
+
+#p1{
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1c1e21;
+}
+
+.fb-logo{
+    transform: translate(180px,175px);
+}
+
+input{
+    height: 50px;
+    padding: 16px;
+    width: 360px;
+    margin-bottom: 15px;
+    font-size: 17px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    vertical-align: middle;
+}
+
+input:focus{
+    box-shadow: 0px 0px 1px 1px rgb(29, 111, 255), 0px 2px 4px rgba(29, 111, 255, .1) , 0px 8px 16px rgba(29, 111, 255, .1);
+    outline: none;
+}
+
+.txt{
+    transform: translatex(820px);
+    margin-top: 30px;
+}
+
+input:focus::placeholder {
+    color: rgb(194, 194, 194);
+}
+
+.b1{
+    /* transform: translate(165px); */
+    width: 364px;
+    height: 48px;
+    border-radius: 6px;
+    border: none;
+    background-color: #0866ff;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    transition: all 0.2s linear;
+}
+
+.b1:hover{
+    background-color: #1877f2;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.b1:active{
+    outline: none;
+    border: none;
+}
+
+.link{
+    position: relative;
+    left: 115px;
+    text-decoration: none;
+    color: #0866ff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+
+.b2{
+    vertical-align: middle;
+    height: 48px;
+    width: 192.61px;
+    transform: translate(90px);
+    border-radius: 6px;
+    border: none;
+    background-color: #42b72a;
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    transition: all 0.2s linear;
+}
+
+.b2:hover{
+    background-color: #36a420;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+#alink{
+    color: #1C1E2E;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+#alink:hover{
+    text-decoration: underline;
+}
+
+#pt{
+    color: #1c1e2e;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+@media screen and(max-width: 1024px;){
+    input{
+        height: 100px;
+    }
+    img{
+        height: 1000px;
+    }
+}
